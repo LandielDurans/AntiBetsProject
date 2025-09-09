@@ -3,7 +3,7 @@
 
 export default function ConsequenciasESolucoes() {
     return (
-        <main className="min-h-screen bg-black text-white antialiased">
+        <main className="min-h-screen bg-black text-white antialiased" id="consequencia">
             <section id="consequencias" className="container mx-auto px-6 py-12">
                 <h3 className="text-2xl font-bold mb-6 text-center">Consequências</h3>
 

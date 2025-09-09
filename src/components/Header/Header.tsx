@@ -29,13 +29,20 @@ export function HeaderPage() {
                             Soluções
                         </a>
                     </li>
-                    <li className="bg-green-800 hover:bg-green-900 cursor-pointer rounded h-10 w-40 flex justify-center items-center">
-                        <a href="#help" className="hover:underline">
+                    <a
+                        href="https://jogadoresanonimos.com.br"
+                        target="_blank"
+                        className="hover:underline"
+                        rel="noopener"
+                    >
+                        <li className="bg-green-800 hover:bg-green-900 cursor-pointer rounded h-10 w-40 flex justify-center items-center">
+
                             Precisa de ajuda?
-                        </a>
-                    </li>
+                        </li>
+                    </a>
+
                 </ul>
             </nav>
         </header>
-    )
+    );
 }

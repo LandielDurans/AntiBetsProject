@@ -3,7 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 export function SectionCausas() {
     return (
-        <div className="min-h-screen w-full text-white bg-[url('/img/bg-causas.png')] bg-cover bg-center">
+        // biome-ignore lint/correctness/useUniqueElementIds: <explanation> FAZ O L
+        <div className="min-h-screen w-full text-white bg-[url('/img/bg-causas.png')] bg-cover bg-center" id="causas">
             <h1 className="text-center text-4xl font-bold py-5">As causas</h1>
 
             <div className="flex flex-col md:flex-row items-stretch justify-center gap-15 max-w-6xl mx-auto px-6 pt-10 h-100 cursor-pointer">
