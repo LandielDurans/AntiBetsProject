@@ -1,50 +1,55 @@
-import Relato1 from "/img/relato1.png";
-import { Card } from "../ui/card";
-import PieChartGraph from "../ui/charts/pieChart";
-
 export function SectionProblem() {
     return (
-        // biome-ignore lint/correctness/useUniqueElementIds: <explanation> Igonre Biome
-        <div className="h-screen text-amber-50 px-6" id="problema">
-            <h1 className="text-4xl font-bold text-center text-white py-5">
-                O Problema
-            </h1>
-            <section className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-auto">
-                <div>
-                    <h1 className="text-2xl text-center font-black mb-5">
-                        O que é o vicio?
-                    </h1>
-                    <p className="text-center">
-                        A ludopatia é um vício em apostas, um transtorno mental que leva a
-                        um comportamento compulsivo. Ele gera problemas financeiros e
-                        sociais, altera a química do cérebro com a liberação de dopamina e
-                        requer tratamento com psicoterapia e, por vezes, medicação.
-                    </p>
-                </div>
-                <Card className="w-full h-full">
-                    <img
-                        src={Relato1}
-                        alt="Relato sobre vício"
-                        className="w-full h-full object-cover rounded-lg"
-                    />
-                </Card>
+        <main className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white px-10 py-20" id="problema">
+            <section className="max-w-4xl mx-auto text-center space-y-10">
+                <h1 className="text-5xl font-bold">
+                    Aposta hoje, dívida amanhã. O risco é real.
+                </h1>
+                <p className="text-xl text-gray-300">
+                    Mais de <span className="font-bold text-green-500">10 milhões </span>
+                    de brasileiros já enfrentam problemas com apostas online.
+                    A promessa de dinheiro fácil esconde um caminho de dívidas,
+                    ansiedade e destruição emocional.
+                </p>
             </section>
 
-            <section className="flex flex-col mt-10 md:flex-row items-center justify-center gap-8 max-w-6xl mx-auto">
-                <Card className="w-full md:w-1/2 h-60 flex items-center justify-center p-4">
-                    <PieChartGraph />
-                </Card>
-
-                <div>
-                    <h1 className="text-2xl text-center font-black mb-5">
-                        Publico apostador
-                    </h1>
-                    <p className="text-center">
-                        O público é majoritariamente masculino (62%) e jovem, com 56% dos
-                        apostadores tendo entre 16 e 39 anos, segundo o DataSenado.
+            {/* Relatos */}
+            <section className="grid md:grid-cols-3 gap-8 mt-20">
+                <div className="bg-[#121212] p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+                    <p className="italic">
+                        "Eu achava que era só diversão, até perder meu salário inteiro em um fim de semana."
                     </p>
+                    <span className="block text-sm text-gray-400 mt-3">– João, 24 anos</span>
+                </div>
+                <div className="bg-[#121212] p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+                    <p className="italic">
+                        "Prometi que ia parar, mas cada vez que perdia, queria recuperar. Foi um ciclo sem fim."
+                    </p>
+                    <span className="block text-sm text-gray-400 mt-3">– Maria, 32 anos</span>
+                </div>
+                <div className="bg-[#121212] p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+                    <p className="italic">
+                        "Só percebi quando já estava devendo mais do que podia pagar."
+                    </p>
+                    <span className="block text-sm text-gray-400 mt-3">– Carlos, 28 anos</span>
                 </div>
             </section>
-        </div>
-    );
+
+            {/* Call to Action */}
+            <section className="text-center mt-20 space-y-5">
+                <h2 className="text-3xl font-bold text-green-500">
+                    Você pode mudar sua história.
+                </h2>
+                <p className="text-lg text-gray-300">
+                    O primeiro passo é reconhecer o problema. O próximo é buscar ajuda.
+                </p>
+                <a
+                    href="/solucao"
+                    className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition"
+                >
+                    Quero mudar minha vida
+                </a>
+            </section>
+        </main>
+    )
 }
