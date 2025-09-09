@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 
 export function HomePage() {
     return (
-        <main className="h-[90vh] 2xl:h-[94vh] bg-[url(public/img/betimg.png)] bg-no-repeat bg-cover flex">
+        <main className="h-[90vh] 2xl:h-[94vh] bg-[url(/img/betimg.png)] bg-no-repeat bg-cover flex">
             <section className="w-[50%] flex flex-col justify-center p-15 space-x-1 gap-7 text-white">
                 <h1 className="text-5xl font-bold">
                     A aposta parece inofensiva.
